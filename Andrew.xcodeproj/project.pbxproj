@@ -10,6 +10,7 @@
 		9100F22E2B81BD6A0078F6F5 /* profilePic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9100F22D2B81BD6A0078F6F5 /* profilePic.swift */; };
 		9100F2302B81C4430078F6F5 /* dukepersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9100F22F2B81C4430078F6F5 /* dukepersonView.swift */; };
 		91AF6C5B2B82605E007F2199 /* editDatabaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AF6C5A2B82605E007F2199 /* editDatabaseView.swift */; };
+		91AF6C602B826B78007F2199 /* mepic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AF6C5F2B826B78007F2199 /* mepic.swift */; };
 		91D291DF2B81143F00225F8B /* AndrewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D291DE2B81143F00225F8B /* AndrewApp.swift */; };
 		91D291E12B81143F00225F8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D291E02B81143F00225F8B /* ContentView.swift */; };
 		91D291E32B81144300225F8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91D291E22B81144300225F8B /* Assets.xcassets */; };
@@ -17,9 +18,6 @@
 		91D291EE2B811B4000225F8B /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D291ED2B811B4000225F8B /* DataModel.swift */; };
 		91D291F12B811B6E00225F8B /* DataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D291F02B811B6E00225F8B /* DataStructures.swift */; };
 		91D291F82B81455000225F8B /* ece564sp24.json in Resources */ = {isa = PBXBuildFile; fileRef = 91D291F72B81455000225F8B /* ece564sp24.json */; };
-		91D291FA2B81455700225F8B /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 91D291F92B81455700225F8B /* avatar.png */; };
-		91D291FC2B81455E00225F8B /* mepic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D291FB2B81455E00225F8B /* mepic.swift */; };
-		91D291FE2B81456400225F8B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 91D291FD2B81456400225F8B /* logo.png */; };
 		91D292032B816D3D00225F8B /* databaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D292022B816D3D00225F8B /* databaseView.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +26,8 @@
 		9100F22F2B81C4430078F6F5 /* dukepersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dukepersonView.swift; sourceTree = "<group>"; };
 		91AF6C5A2B82605E007F2199 /* editDatabaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editDatabaseView.swift; sourceTree = "<group>"; };
 		91AF6C5D2B8269C7007F2199 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		91AF6C5E2B826B5E007F2199 /* ece564sp24.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ece564sp24.json; sourceTree = "<group>"; };
+		91AF6C5F2B826B78007F2199 /* mepic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mepic.swift; sourceTree = "<group>"; };
 		91D291DB2B81143F00225F8B /* Andrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Andrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D291DE2B81143F00225F8B /* AndrewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndrewApp.swift; sourceTree = "<group>"; };
 		91D291E02B81143F00225F8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,9 +36,6 @@
 		91D291ED2B811B4000225F8B /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		91D291F02B811B6E00225F8B /* DataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructures.swift; sourceTree = "<group>"; };
 		91D291F72B81455000225F8B /* ece564sp24.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ece564sp24.json; path = ../../../HW3/Andrew/Andrew/Assets/ece564sp24.json; sourceTree = "<group>"; };
-		91D291F92B81455700225F8B /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = avatar.png; path = ../../../HW3/Andrew/Andrew/Assets/avatar.png; sourceTree = "<group>"; };
-		91D291FB2B81455E00225F8B /* mepic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mepic.swift; path = ../../../HW3/Andrew/Andrew/Assets/mepic.swift; sourceTree = "<group>"; };
-		91D291FD2B81456400225F8B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../HW3/Andrew/Andrew/Assets/logo.png; sourceTree = "<group>"; };
 		91D291FF2B815AA400225F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		91D292022B816D3D00225F8B /* databaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = databaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +90,8 @@
 				91D291EF2B811B5300225F8B /* Data Structures */,
 				91D291E42B81144300225F8B /* Preview Content */,
 				91AF6C5D2B8269C7007F2199 /* README.md */,
+				91AF6C5E2B826B5E007F2199 /* ece564sp24.json */,
+				91AF6C5F2B826B78007F2199 /* mepic.swift */,
 			);
 			path = Andrew;
 			sourceTree = "<group>";
@@ -124,9 +123,6 @@
 		91D291F62B81451100225F8B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				91D291FD2B81456400225F8B /* logo.png */,
-				91D291FB2B81455E00225F8B /* mepic.swift */,
-				91D291F92B81455700225F8B /* avatar.png */,
 				91D291F72B81455000225F8B /* ece564sp24.json */,
 				91D291E22B81144300225F8B /* Assets.xcassets */,
 			);
@@ -191,8 +187,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91D291FA2B81455700225F8B /* avatar.png in Resources */,
-				91D291FE2B81456400225F8B /* logo.png in Resources */,
 				91D291F82B81455000225F8B /* ece564sp24.json in Resources */,
 				91D291E62B81144300225F8B /* Preview Assets.xcassets in Resources */,
 				91D291E32B81144300225F8B /* Assets.xcassets in Resources */,
@@ -208,10 +202,10 @@
 			files = (
 				9100F22E2B81BD6A0078F6F5 /* profilePic.swift in Sources */,
 				91D291E12B81143F00225F8B /* ContentView.swift in Sources */,
+				91AF6C602B826B78007F2199 /* mepic.swift in Sources */,
 				9100F2302B81C4430078F6F5 /* dukepersonView.swift in Sources */,
 				91D292032B816D3D00225F8B /* databaseView.swift in Sources */,
 				91D291F12B811B6E00225F8B /* DataStructures.swift in Sources */,
-				91D291FC2B81455E00225F8B /* mepic.swift in Sources */,
 				91AF6C5B2B82605E007F2199 /* editDatabaseView.swift in Sources */,
 				91D291DF2B81143F00225F8B /* AndrewApp.swift in Sources */,
 				91D291EE2B811B4000225F8B /* DataModel.swift in Sources */,
