@@ -15,7 +15,7 @@ struct dukepersonView: View {
         
         VStack{
             Image("duke")
-                .frame(width :400, height:340)
+                .frame(width :400, height:370)
                 .clipped()
             profilePic(imageString: person.picture, height: height, width: width)
                 
