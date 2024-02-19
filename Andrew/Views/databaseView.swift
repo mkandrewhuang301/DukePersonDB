@@ -19,25 +19,29 @@ struct databaseView: View {
     var professors: [DukePerson] {
             
         dataModel.entries().filter { person in
-            let firstName = keyValuePairs.indices.contains(0) ? keyValuePairs[0].lowercased() : ""
-            let lastName = keyValuePairs.indices.contains(1) ? keyValuePairs[1].lowercased() : ""
-            return person.role == .Professor && (firstName != "" ? person.fName.lowercased().hasPrefix(firstName) : true) && (lastName != "" ? person.lName.lowercased().hasPrefix(lastName) : true)
+            //let firstName = keyValuePairs.indices.contains(0) ? keyValuePairs[0].lowercased() : ""
+            //let lastName = keyValuePairs.indices.contains(1) ? keyValuePairs[1].lowercased() : ""
+            //return person.role == .Professor && (firstName != "" ? person.fName.lowercased().hasPrefix(firstName) : true) && (lastName != "" ? person.lName.lowercased().hasPrefix(lastName) : true)
+            return person.role == .Professor && (searchText != "" ? person.description.lowercased().contains(searchText.lowercased()) : true)
         }
     }
     var TAs: [DukePerson]{
         dataModel.entries().filter { person in
-            let firstName = keyValuePairs.indices.contains(0) ? keyValuePairs[0].lowercased() : ""
-            let lastName = keyValuePairs.indices.contains(1) ? keyValuePairs[1].lowercased() : ""
-            return person.role == .TA && (firstName != "" ? person.fName.lowercased().hasPrefix(firstName) : true) && (lastName != "" ? person.lName.lowercased().hasPrefix(lastName) : true)
+            //let firstName = keyValuePairs.indices.contains(0) ? keyValuePairs[0].lowercased() : ""
+            //let lastName = keyValuePairs.indices.contains(1) ? keyValuePairs[1].lowercased() : ""
+            //return person.role == .TA && (firstName != "" ? person.fName.lowercased().hasPrefix(firstName) : true) && (lastName != "" ? person.lName.lowercased().hasPrefix(lastName) : true)
+            return person.role == .TA && (searchText != "" ? person.description.lowercased().contains(searchText.lowercased()) : true)
         }
     }
     var students: [DukePerson]{
         dataModel.entries().filter { person in
-            let firstName = keyValuePairs.indices.contains(0) ? keyValuePairs[0].lowercased() : ""
-            let lastName = keyValuePairs.indices.contains(1) ? keyValuePairs[1].lowercased() : ""
-            return person.role == .Student && (firstName != "" ? person.fName.lowercased().hasPrefix(firstName) : true) && (lastName != "" ? person.lName.lowercased().hasPrefix(lastName) : true)
+            //let firstName = keyValuePairs.indices.contains(0) ? keyValuePairs[0].lowercased() : ""
+            //let lastName = keyValuePairs.indices.contains(1) ? keyValuePairs[1].lowercased() : ""
+            //return person.role == .Student && (firstName != "" ? person.fName.lowercased().hasPrefix(firstName) : true) && (lastName != "" ? person.lName.lowercased().hasPrefix(lastName) : true)
+            return person.role == .Student && (searchText != "" ? person.description.lowercased().contains(searchText.lowercased()) : true)
         }
     }
+    /*
     var others: [DukePerson]{
         dataModel.entries().filter { person in
             let firstName = keyValuePairs.indices.contains(0) ? keyValuePairs[0].lowercased() : ""
@@ -45,6 +49,7 @@ struct databaseView: View {
             return person.role == .Other && (firstName != "" ? person.fName.lowercased().hasPrefix(firstName) : true) && (lastName != "" ? person.lName.lowercased().hasPrefix(lastName) : true)
         }
     }
+     */
     
     var body: some View {
         List {
@@ -69,6 +74,7 @@ struct databaseView: View {
                     }
                 }
             }
+            /*
             Section(header: Text("Other").bold() .font(.subheadline)) {
                 ForEach(others, id: \.DUID) { person in
                     NavigationLink(destination: dukepersonView(person: person)) {
@@ -76,6 +82,7 @@ struct databaseView: View {
                     }
                 }
             }
+             */
         }
         .navigationTitle("Duke Database")
         .searchable(text: $searchText, prompt: "Search for a Person...") {}
