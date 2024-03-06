@@ -1,4 +1,6 @@
-#  <#DukePesonDB#>
+#  DukePersonDB
+
+DukePersonDB is a database that allows users to create a database of Duke People.
 
 Project Highlights:
 - Updated aesthetic for dukePersonView by adding a duke background (similar to linkedin profiles as mentioned in the doc)
